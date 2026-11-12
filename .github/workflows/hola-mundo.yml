@@ -1,0 +1,14 @@
+name: Ejemplo Workflow
+
+on: [push]
+
+jobs:
+
+  saludo:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Revisar el repositorio
+      uses: action/checkout@v4
+
+    - name: Ejectuar el script
+      run: node hola.js
