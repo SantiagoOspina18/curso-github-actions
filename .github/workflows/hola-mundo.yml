@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Revisar el repositorio
-      uses: action/checkout@v4
+      uses: action/checkout@v5
 
     - name: Ejectuar el script
       run: node hola.js
