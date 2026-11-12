@@ -1,7 +1,10 @@
 name: Ejemplo Workflow
 
-on: [push]
-
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+  
 jobs:
 
   saludo:
